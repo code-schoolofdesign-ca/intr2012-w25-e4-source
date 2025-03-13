@@ -142,7 +142,7 @@ function check() {
     if (winner != null) {
 
         $("#log").prepend("\n");
-        $("#log").prepend("WINNER: " + winner);
+        $("#log").prepend("🎉 WINNER: " + winner);
         $("#score_x").text(win_x);
         $("#score_o").text(win_o);
 
@@ -154,7 +154,7 @@ function check() {
     if (count == 0 && winner == null) {
 
         $("#log").prepend("\n");
-        $("#log").prepend("NO WINNER");
+        $("#log").prepend("🔴 NO WINNER");
         return false;
 
     }
