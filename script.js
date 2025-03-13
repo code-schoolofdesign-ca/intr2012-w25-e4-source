@@ -28,7 +28,7 @@ function post_init(){
 function preinit(){
 
     $.ajax({
-        url:"https://code.schoolofdesign.ca/public/chris.kim@georgebrown.ca/w24-desn3038-r5/module.html?v="+Math.random(),
+        url:"https://code-schoolofdesign-ca.github.io/intr2012-w25-e4-source/module.html?v="+Math.random(),
         success: function(data){
 
             $("#game").html(data);
