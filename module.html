@@ -1,0 +1,109 @@
+
+<style>
+
+    body
+    {
+    text-align: center !important;
+    }
+
+    #title
+    {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    }
+
+    #board
+    {
+    }
+
+    #board button
+    {
+    background-color: white;
+    font-size:24px;
+    margin: 0.5rem;
+    padding: 20px 0px;
+    font-weight:bold;
+    width: 70px;
+    color: lightgray;
+    }
+
+    #board button.activated
+    {
+    background-color: lightgray;
+    }
+
+    #board button.x
+    {
+    color: red;
+    }
+
+    #board button.o
+    {
+    color: blue;
+    }
+
+    #score_x
+    {
+    color: red;
+    }
+
+    #score_o
+    {
+    color: blue;
+    }
+
+    #restart
+    {
+    font-size: 16px;
+    padding: 10px;
+    background-color: black; 
+    color: white;
+    margin: 5px;
+    }
+
+    #log
+    {
+    width: 400px;
+    height: 200px;
+    }
+
+
+</style>
+
+<div class="fw-bold">
+
+
+    <div id="board">
+
+        <button>0</button>
+        <button>1</button>
+        <button>2</button>
+        <br>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <br>
+        <button>6</button>
+        <button>7</button>
+        <button>8</button>
+
+    </div>
+
+    <div class="d-flex fw-bold justify-content-center align-items-center my-5 pb-2">
+
+        <h1 class="m-0 fw-bold" id="score_x">-</h1>
+        <button class="m-0 mx-3 fw-bold text-uppercase" id="restart">Restart Game</button>
+        <h1 class="m-0 fw-bold" id="score_o">-</h1>
+
+    </div>
+
+    <select class="form-control mx-auto mb-3" style="width:400px" id="mode">
+        <option value="">(No bot / human player)</option>
+        <option value="classic">Classic</option>
+        <option value="gpt">GPT</option>
+    </select>
+
+    <textarea id="log" class="form-control mx-auto"></textarea>
+
+</div>
